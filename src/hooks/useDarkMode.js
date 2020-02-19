@@ -7,6 +7,7 @@ export const useDarkMode = () => {
 	useEffect(
 		() => {
 			if (darkMode === true) {
+				// manipulating DOM by selecting "body" then adding the class list to it which enables dark-mode css
 				document.querySelector('body').classList.add('dark-mode');
 			} else if (darkMode !== true) {
 				document.querySelector('body').classList.remove('dark-mode');
